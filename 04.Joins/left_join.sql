@@ -28,3 +28,13 @@ ON c.CustomerID = o.CustomerID
 WHERE o.ProductName != 'Mouse'
 OR o.ProductName IS NULL;
 
+
+/* 4. Display: customers without orders and orders without a valid customer. */
+SELECT *
+FROM Customers AS c
+FULL JOIN Orders AS o
+ON c.CustomerID = o.CustomerID
+WHERE c.CustomerID IS NULL
+OR o.CustomerID IS NULL;
+
+
