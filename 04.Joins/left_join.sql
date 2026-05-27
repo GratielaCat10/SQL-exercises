@@ -37,4 +37,19 @@ WHERE c.CustomerID IS NULL
 OR o.CustomerID IS NULL;
 
 
+/* 5. Display: the customer's first name, the city, the total number of orders and the total order value.
+Only for customers who have at least 1 order.
+Ordered descending by total order value. */
+SELECT
+    c.FirstName,
+    c.City,
+    COUNT(o.OrderID) AS Orders,
+    MAX(o.Price) AS Maximum
+FROM Customers AS c
+LEFT JOIN Orders AS o
+ON c.CustomerID = o.CustomerID
+GROUP BY c.FirstName, c.City
+HAVING COUNT(o.OrderID) >= 1
+ORDER BY Maximum DESC;
+
 
