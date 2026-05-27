@@ -48,3 +48,34 @@ FROM Orders
 GROUP BY ProductName
 HAVING SUM(Quantity) > 1
 ORDER BY TotalQuantity DESC;
+
+
+/* 7. Display: the products and the total quantity.
+Where:
+    - the price is greater than 100
+    - the total quantity is greater than 1
+Ordered descending by the total quantity. */
+SELECT
+    ProductName,
+    SUM(Quantity) AS Total
+FROM Orders
+WHERE Price > 100
+GROUP BY ProductName
+HAVING SUM(Quantity) > 1
+ORDER BY SUM(Quantity) DESC;
+
+
+/* 8. Display: the product, the total quantity and the average price.
+Where the price is greater than 100.
+And display only products with a total quantity greater than or equal to 2.
+Ordered descending by total quantity.  */
+SELECT
+    ProductName,
+    SUM(Quantity) AS TotalQuantity,
+    AVG(Price) AS AveragePrice
+FROM Orders
+WHERE Price > 100
+GROUP BY ProductName
+HAVING SUM(Quantity) >= 2
+ORDER BY SUM(Quantity) DESC;
+
