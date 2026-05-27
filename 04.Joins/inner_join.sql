@@ -39,3 +39,16 @@ FROM Customers AS c
 INNER JOIN Orders AS o
 ON c.CustomerID = o.CustomerID
 GROUP BY FirstName;
+
+
+/* 5. Display customers who have more than 1 order. */
+SELECT
+    c.FirstName,
+    COUNT(o.OrderID) AS TotalOrders
+FROM Customers AS c
+INNER JOIN Orders AS o
+ON c.CustomerID = o.CustomerID
+GROUP BY FirstName
+HAVING COUNT(o.OrderID) > 1;
+
+
