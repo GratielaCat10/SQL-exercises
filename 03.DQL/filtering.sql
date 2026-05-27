@@ -52,3 +52,14 @@ FROM Customers
 WHERE FirstName LIKE 'A%';
 
 
+-- 10. Display customers ordered by age ascending.
+SELECT *
+FROM Customers
+ORDER BY Age ASC;
+
+
+-- 11. Display orders ordered by price descending.
+SELECT *
+FROM Orders
+ORDER BY Price DESC;
+
