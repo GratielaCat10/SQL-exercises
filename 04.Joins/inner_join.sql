@@ -30,3 +30,12 @@ INNER JOIN Orders AS o
 ON c.CustomerID = o.CustomerID
 WHERE ProductName LIKE '%o%';
 
+
+/* 4. Display: the customer's first name and the number of orders. */
+SELECT
+    c.FirstName,
+    COUNT(o.OrderID) AS Orders
+FROM Customers AS c
+INNER JOIN Orders AS o
+ON c.CustomerID = o.CustomerID
+GROUP BY FirstName;
