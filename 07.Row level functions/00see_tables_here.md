@@ -9,6 +9,8 @@ Sales.Customers
 | 5 | Anna | Adams | USA | NULL |
 
 
+Sales.Orders
+
 | OrderID | ProductID | CustomerID | SalesPersonID | OrderDate | ShipDate | OrderStatus | ShipAddress | BillAddress | Quantity | Sales | CreationTime |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 101 | 2 | 3 | 2025-01-01 | 2025-01-05 | Delivered | 9833 Mt. Dias Blv. | 1226 Shoe St. | 1 | 10 | 2025-01-01 12:34:56.0000000 |
