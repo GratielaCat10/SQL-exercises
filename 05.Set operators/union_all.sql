@@ -1,6 +1,6 @@
 -- List all people including duplicates
 SELECT FirstName, LastName
-FROM Customers
+FROM Sales.Customers
 UNION ALL
 SELECT FirstName, LastName
-FROM Employees;
+FROM Sales.Employees;
