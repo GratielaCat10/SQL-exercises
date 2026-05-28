@@ -90,3 +90,13 @@ ORDER BY
     DATEPART(QUARTER, OrderDate);
 
 
+-- 10. Generate a salesperson performance report showing the total number of orders, total sales amount, and average sales value handled by each salesperson.
+SELECT
+    SalesPersonID,
+    COUNT(OrderID) AS TotalOrders,
+    CAST(SUM(Sales) AS DECIMAL(10,2)) AS TotalSales,
+    CAST(AVG(Sales) AS DECIMAL(10,2)) AS AverageSales
+FROM Sales.Orders
+GROUP BY SalesPersonID
+ORDER BY TotalSales DESC;
+
