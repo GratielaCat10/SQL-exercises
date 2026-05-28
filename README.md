@@ -7,9 +7,11 @@ Joins
 Set Operators
 Row-Level Functions
 Interview Practice
+
 Technologies
 SQL Server
 PostgreSQL (optional later)
+
 Topics Covered
 Create / Alter / Drop
 Insert / Update / Delete
