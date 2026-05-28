@@ -34,5 +34,12 @@ FROM Sales.Orders
 WHERE ShipDate > DATEADD(DAY, 7, OrderDate);
 
 
---- 5. 
+--- 5. Calculate the total lifecycle duration of each order from order date to shipping date, then compare it to a fixed 5-day processing benchmark.
+SELECT
+    OrderID,
+    OrderDate,
+    ShipDate,
+    DATEDIFF(DAY, OrderDate, ShipDate) AS ActualProcessingTime,
+    DATEADD(DAY, 5, OrderDate) AS BenchmarkDate
+FROM Sales.Orders;
 
