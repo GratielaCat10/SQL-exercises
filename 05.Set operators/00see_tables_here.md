@@ -1,3 +1,5 @@
+Sales.Customers
+
 | CustomerID | FirstName | LastName | Country | Score |
 |---|---|---|---|---|
 | 1 | Jossef | Goldberg | Germany | 350 |
@@ -7,6 +9,7 @@
 | 5 | Anna | Adams | USA | NULL |
 
 
+Sales.Employees
 
 | EmployeeID | FirstName | LastName | Department | BirthDate | Gender | Salary | ManagerID |
 |---|---|---|---|---|---|---|---|
