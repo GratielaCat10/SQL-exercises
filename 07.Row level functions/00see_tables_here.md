@@ -1,3 +1,5 @@
+Sales.Customers
+
 | CustomerID | FirstName | LastName | Country | Score |
 |---|---|---|---|---|
 | 1 | Jossef | Goldberg | Germany | 350 |
