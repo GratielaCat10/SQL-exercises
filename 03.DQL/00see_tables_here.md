@@ -1,3 +1,5 @@
+Customers
+
 | CustomerID | FirstName | LastName | City | Age | Email |
 |---|---|---|---|---|---|
 | 1 | Andrei | Popescu | Cluj | 25 | andrei@gmail.com |
@@ -7,6 +9,8 @@
 | 5 | David | Radu | Timisoara | 35 | NULL |
 
 
+
+Products
 
 | OrderID | CustomerID | ProductName | Quantity | Price |
 |---|---|---|---|---|
