@@ -94,3 +94,10 @@ SELECT
     ) AS ExtractedCode
 FROM Sales.Customers;
 
+
+-- 13. Display each customer's first name and return the name without its first character.
+SELECT
+    FirstName,
+    SUBSTRING(TRIM(FirstName), 2, LEN(FirstName)) AS sub_name
+FROM Sales.Customers
+
