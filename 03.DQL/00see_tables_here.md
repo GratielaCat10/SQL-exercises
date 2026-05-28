@@ -10,7 +10,7 @@ Customers
 
 
 
-Products
+Orders
 
 | OrderID | CustomerID | ProductName | Quantity | Price |
 |---|---|---|---|---|
