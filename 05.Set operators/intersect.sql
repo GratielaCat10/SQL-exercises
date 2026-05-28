@@ -1,6 +1,6 @@
 -- People that exist in both tables
 SELECT FirstName, LastName
-FROM Customers
+FROM Sales.Customers
 INTERSECT
 SELECT FirstName, LastName
-FROM Employees;
+FROM Sales.Employees;
