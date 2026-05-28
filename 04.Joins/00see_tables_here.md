@@ -1,4 +1,4 @@
-Sales.Customers
+Customers
 
 | CustomerID | FirstName | LastName | City | Age | Email |
 |---|---|---|---|---|---|
@@ -9,7 +9,7 @@ Sales.Customers
 | 5 | David | Radu | Timisoara | 35 | NULL |
 
 
-Sales.Products
+Orders
 
 | OrderID | CustomerID | ProductName | Quantity | Price |
 |---|---|---|---|---|
