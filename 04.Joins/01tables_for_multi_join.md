@@ -1,3 +1,5 @@
+Sales.Customsrs
+
 | CustomerID | FirstName | LastName | Country | Score |
 |---|---|---|---|---|
 | 1 | Jossef | Goldberg | Germany | 350 |
@@ -6,6 +8,8 @@
 | 4 | Mark | Schwarz | Germany | 500 |
 | 5 | Anna | Adams | USA | NULL |
 
+
+Sales.Orders
 
 | OrderID | ProductID | CustomerID | SalesPersonID | OrderDate | ShipDate | OrderStatus | ShipAddress | BillAddress | Quantity | Sales | CreationTime |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -21,6 +25,8 @@
 | 10 | 102 | 3 | 5 | 2025-03-15 | 2025-03-20 | Shipped | NULL | NULL | 0 | 60 | 2025-03-16 23:25:15.0000000 |
 
 
+Sales.Employees
+
 | EmployeeID | FirstName | LastName | Department | BirthDate | Gender | Salary | ManagerID |
 |---|---|---|---|---|---|---|---|
 | 1 | Frank | Lee | Marketing | 1988-12-05 | M | 55000 | NULL |
@@ -29,6 +35,8 @@
 | 4 | Michael | Ray | Sales | 1977-02-10 | M | 90000 | 2 |
 | 5 | Carol | Baker | Sales | 1982-02-11 | F | 55000 | 3 |
 
+
+Sales.Products
 
 | ProductID | Product | Category | Price |
 |---|---|---|---|
